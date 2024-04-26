@@ -1,0 +1,54 @@
+main{
+	margin-left: 400px;
+	margin-right: 400px;
+	margin-top: 50px;
+}
+
+a{
+	color: rgba(54, 63, 244, 0.654)
+}
+
+.disk {
+	height: 30px;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right{
+	display: flex;
+	justify-content: right;
+	align-items: right;
+}
+
+footer{
+	text-align: center;
+	background-color: black;
+	margin-top: 180px;
+
+}
+
+.footerHome{
+	position: relative;
+	margin-top: 40px;
+	text-align: center;
+	background-color: black;
+	height: 250px;
+	color:whitesmoke;
+	margin-top: 170px;
+}
+
+/* Definizione dell'animazione */
+@keyframes victory {
+    0% { transform: translateX(0px) translateY(0px); }
+    100% { transform: translateX(400px) translateY(-300px); opacity: 0; }
+}
+
+/* Aggiungere un'animazione per i dischi quando si verifica una vittoria */
+.victory-animation {
+    animation: victory 2s forwards;
+}
+
